@@ -2,38 +2,33 @@ package com.leocardz.link.preview.library;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class SourceContent {
 
 	private boolean success = false;
 	private String htmlCode = "";
-	private String raw = "";
 	private String title = "";
 	private String description = "";
 	private String url = "";
 	private String finalUrl = "";
-	private String cannonicalUrl = "";
-	private HashMap<String, String> metaTags = new HashMap<String, String>();
-
-	private List<String> images = new ArrayList<String>();
-	private String[] urlData = new String[2];
+	private String canonicalUrl = "";
+	private HashMap<String, String> metaTags = new HashMap<>();
+	private ArrayList<String> images = new ArrayList<>();
 
 	public SourceContent() {
 	}
 
 	/**
-	 * @return the success
+	 * @return wether the operation was successfully accomplished
 	 */
-	public boolean isSuccess() {
+	public boolean isSuccessful() {
 		return success;
 	}
 
 	/**
-	 * @param success
-	 *            the success to set
+	 * @param success the success to set
 	 */
-	public void setSuccess(boolean success) {
+	void setSuccess(boolean success) {
 		this.success = success;
 	}
 
@@ -45,26 +40,10 @@ public class SourceContent {
 	}
 
 	/**
-	 * @param htmlCode
-	 *            the htmlCode to set
+	 * @param htmlCode the htmlCode to set
 	 */
-	public void setHtmlCode(String htmlCode) {
+	void setHtmlCode(String htmlCode) {
 		this.htmlCode = htmlCode;
-	}
-
-	/**
-	 * @return the raw
-	 */
-	public String getRaw() {
-		return raw;
-	}
-
-	/**
-	 * @param raw
-	 *            the raw to set
-	 */
-	public void setRaw(String raw) {
-		this.raw = raw;
 	}
 
 	/**
@@ -75,10 +54,9 @@ public class SourceContent {
 	}
 
 	/**
-	 * @param title
-	 *            the title to set
+	 * @param title the title to set
 	 */
-	public void setTitle(String title) {
+	void setTitle(String title) {
 		this.title = title;
 	}
 
@@ -90,10 +68,9 @@ public class SourceContent {
 	}
 
 	/**
-	 * @param description
-	 *            the description to set
+	 * @param description the description to set
 	 */
-	public void setDescription(String description) {
+	void setDescription(String description) {
 		this.description = description;
 	}
 
@@ -105,10 +82,9 @@ public class SourceContent {
 	}
 
 	/**
-	 * @param url
-	 *            the url to set
+	 * @param url the url to set
 	 */
-	public void setUrl(String url) {
+	void setUrl(String url) {
 		this.url = url;
 	}
 
@@ -120,26 +96,24 @@ public class SourceContent {
 	}
 
 	/**
-	 * @param finalUrl
-	 *            the finalUrl to set
+	 * @param finalUrl the finalUrl to set
 	 */
-	public void setFinalUrl(String finalUrl) {
+	void setFinalUrl(String finalUrl) {
 		this.finalUrl = finalUrl;
 	}
 
 	/**
-	 * @return the cannonicalUrl
+	 * @return the canonicalUrl
 	 */
-	public String getCannonicalUrl() {
-		return cannonicalUrl;
+	public String getCanonicalUrl() {
+		return canonicalUrl;
 	}
 
 	/**
-	 * @param cannonicalUrl
-	 *            the cannonicalUrl to set
+	 * @param canonicalUrl the canonicalUrl to set
 	 */
-	public void setCannonicalUrl(String cannonicalUrl) {
-		this.cannonicalUrl = cannonicalUrl;
+	void setCanonicalUrl(String canonicalUrl) {
+		this.canonicalUrl = canonicalUrl;
 	}
 
 	/**
@@ -150,41 +124,23 @@ public class SourceContent {
 	}
 
 	/**
-	 * @param metaTags
-	 *            the metaTags to set
+	 * @param metaTags the metaTags to set
 	 */
-	public void setMetaTags(HashMap<String, String> metaTags) {
+	void setMetaTags(HashMap<String, String> metaTags) {
 		this.metaTags = metaTags;
 	}
 
 	/**
 	 * @return the images
 	 */
-	public List<String> getImages() {
+	public ArrayList<String> getImages() {
 		return images;
 	}
 
 	/**
-	 * @param images
-	 *            the images to set
+	 * @param images the images to set
 	 */
-	public void setImages(List<String> images) {
+	void setImages(ArrayList<String> images) {
 		this.images = images;
 	}
-
-	/**
-	 * @return the urlData
-	 */
-	public String[] getUrlData() {
-		return urlData;
-	}
-
-	/**
-	 * @param urlData
-	 *            the urlData to set
-	 */
-	public void setUrlData(String[] urlData) {
-		this.urlData = urlData;
-	}
-
 }

@@ -56,7 +56,7 @@
     </style>
 
     <!-- style the items within the overflow menu -->
-    <style name="MyDropDownListView" parent="Widget.AppCompat.Light.ListView.DropDown"></style>
+    <style name="MyDropDownListView" parent="Widget.AppCompat.Light.ListView.DropDown"/>
 
     <!-- style the list navigation -->
     <style name="MyDropDownNav" parent="Widget.AppCompat.Spinner.DropDown.ActionBar">

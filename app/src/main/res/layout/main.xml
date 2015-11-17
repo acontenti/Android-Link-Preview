@@ -1,10 +1,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:layout_gravity="center_horizontal"
-    android:gravity="center_horizontal"
-    android:orientation="vertical" >
+			xmlns:tools="http://schemas.android.com/tools"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center_horizontal"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -29,7 +30,7 @@
                 android:layout_width="0dip"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
-                android:gravity="center_horizontal|left"
+                android:gravity="center_horizontal|start"
                 android:hint="@string/insert_url"
                 android:padding="10dp"
                 android:inputType="textMultiLine"
