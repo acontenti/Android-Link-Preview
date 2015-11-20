@@ -18,7 +18,7 @@ And you can use the artifacts like this:
 ```groovy
 dependencies {
 	// ...
-	compile ('com.github.acontenti:Android-Link-Preview:1.3') {
+	compile ('com.github.acontenti:Android-Link-Preview:v1.3.1') {
 		transitive = true
 	}
 }
