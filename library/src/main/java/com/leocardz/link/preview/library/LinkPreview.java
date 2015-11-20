@@ -24,14 +24,14 @@ public class LinkPreview {
 	/**
 	 * Callback that is invoked with before and after loading a link preview
 	 */
-	public abstract class Callback {
+	public interface Callback {
 
-		void onPreExecute() {}
+		void onPreExecute();
 
 		/**
 		 * @param sourceContent Class with all contents from preview.
-		 * @param isNull        Indicates if the content is null or not valid.
+		 * @param isNull        Indicates if the content is null.
 		 */
-		abstract void onResult(@Nullable SourceContent sourceContent, boolean isNull);
+		void onResult(@Nullable SourceContent sourceContent, boolean isNull);
 	}
 }
