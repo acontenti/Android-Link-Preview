@@ -222,4 +222,14 @@ class LinkPreviewUtils {
 		}
 		return conn;
 	}
+
+	/**
+	 * Checks if the content could not be retrieved
+	 */
+	static boolean isNull(SourceContent sourceContent) {
+		return sourceContent != null &&
+				!sourceContent.isSuccessful() &&
+				extendedTrim(sourceContent.getHtmlCode()).equals("") &&
+				!isImage(sourceContent.getFinalUrl());
+	}
 }

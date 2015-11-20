@@ -44,7 +44,7 @@ class RegexHelper {
 	 */
 	static ArrayList<String> matches(String text, int resultsNumber) {
 		ArrayList<String> urls = new ArrayList<>();
-		String[] splitString = (text.split(" "));
+		String[] splitString = text.split(" ");
 		for (String s : splitString) {
 			try {
 				URL item = new URL(s);
