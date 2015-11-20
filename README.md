@@ -1,5 +1,7 @@
 #Link Preview
 
+[![JitPack](https://img.shields.io/github/release/acontenti/Android-Link-Preview.svg?label=JitPack)](https://jitpack.io/#acontenti/Android-Link-Preview)
+
 This is a fork of [Android-Link-Preview](https://github.com/LeonardoCardoso/Android-Link-Preview) by [@LeonardoCardoso](https://github.com/LeonardoCardoso). 
 
 ## How to use with Gradle
@@ -7,18 +9,18 @@ This is a fork of [Android-Link-Preview](https://github.com/LeonardoCardoso/Andr
 Simply add the repository to your build.gradle file:
 ```groovy
 repositories {
-	maven { url "https://jitpack.io" }
 	// ...
+	maven { url "https://jitpack.io" }
 }
 ```
 
 And you can use the artifacts like this:
 ```groovy
 dependencies {
-	compile ('com.github.acontenti:Android-Link-Preview:1.1') {
+	// ...
+	compile ('com.github.acontenti:Android-Link-Preview:1.3') {
 		transitive = true
 	}
-	// ...
 }
 ```
 
@@ -37,7 +39,7 @@ LinkPreview.Callback callback = new Callback() {
 		@Override
 		public void onResult(SourceContent sourceContent, boolean isNull) {
 			// Called after execution
-			// Provides a SourceContent object
+			// Provides a SourceContent object containing preview data
 		}
 	};
 ```
